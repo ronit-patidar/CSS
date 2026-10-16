@@ -1,0 +1,35 @@
+<!-- 📌 What is inline-block?
+
+inline-block is a display property that combines features of inline and block elements.
+
+👉 It stays in the same line like inline
+👉 It allows width, height, margin, padding like block -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+.box{
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  background-color: steelblue;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
+/* to remove element from document flow. */
+/* #remove{
+  display: none;
+} */
+  </style>
+</head>
+<body>
+  <div class="box">One</div>
+  <div id="remove" class="box">Two</div>
+  <div class="box">Three</div>
+</body>
+</html>

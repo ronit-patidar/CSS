@@ -1,0 +1,70 @@
+<!-- 🔹 flex-wrap in CSS (Flexbox)
+flex-wrap controls whether flex items stay in one line or move to the next line when there is not enough space.
+
+flex-wrap: value;
+
+1️⃣ nowrap (default)
+
+All items stay in one line
+Items may shrink
+flex-wrap: nowrap;
+
+■ ■ ■ ■ ■ (shrinks)
+
+2️⃣ wrap
+
+Items move to the next line
+Most commonly used
+flex-wrap: wrap;
+
+■ ■ ■
+■ ■
+
+
+3️⃣ wrap-reverse
+
+Items wrap but in reverse direction
+Cross axis direction is reversed
+flex-wrap: wrap-reverse;
+
+■ ■
+■ ■ ■ -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
+.container {
+  display: flex;
+  /* try every proprty to understand */
+  flex-wrap: wrap;
+  width: 180px;
+  border: 2px solid black;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  background: steelblue;
+  margin: 5px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+</div>
+
+</body>
+</html>

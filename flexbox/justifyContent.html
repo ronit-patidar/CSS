@@ -1,0 +1,48 @@
+<!-- main axis property
+justify-content : value
+flex-start -> items start from beginning
+flex-end -> items start from end
+center -> items are centred along the main axis
+space-between -> 
+                  First item at start
+                  Last item at end
+                  Equal space between items
+space-around -> 
+                  equal space around each item.
+                  Outer space is smaller than inner space
+space-evenly ->
+                  Equal space everywhere
+                  Start, between, and end spaces are equal -->
+
+<!-- for cross axis 
+align-content : value -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  display: flex;
+  /* try every property to understand */
+  justify-content: center;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background: tomato;
+  margin: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Position Demo</title>
+  <style>
+    body {
+      height: 2000px;
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      margin-top: 80px;
+    }
+
+    .box {
+      width: 120px;
+      height: 80px;
+      color: white;
+      padding: 10px;
+    }
+
+    /* STATIC */
+    .static {
+      /* by default -> static */
+      position: static; 
+      background: gray;
+    }
+
+    /* RELATIVE */
+    .relative {
+      position: relative;
+      top: 20px;
+      left: 30px;
+      background: green;
+    }
+
+    /* ABSOLUTE */
+    .parent {
+      position: relative;
+      height: 150px;
+      border: 2px dashed black;
+    }
+
+    .absolute {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: red;
+    }
+
+    /* FIXED */
+    .fixed {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: purple;
+    }
+
+    /* STICKY */
+    .sticky {
+      position: sticky;
+      top: 10px;
+      background: orange;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>1. Static (default)</h2>
+  <div class="box static">Static</div>
+
+  <h2>2. Relative (space reserved)</h2>
+  <div class="box relative">Relative</div>
+
+  <h2>3. Absolute (no space reserved)</h2>
+  <div class="parent">
+    Parent
+    <div class="box absolute">Absolute</div>
+  </div>
+
+  <h2>4. Fixed (viewport based)</h2>
+  <div class="box fixed">Fixed</div>
+
+  <h2>5. Sticky (scroll to see)</h2>
+  <div class="box sticky">Sticky</div>
+
+  <p>Scroll down to observe fixed and sticky behavior...</p>
+
+</body>
+</html>
